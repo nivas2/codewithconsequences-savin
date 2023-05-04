@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,700;1,400&family=Merienda:wght@500&display=swap');
+/Todo: make the page responsive by fixing the css where ever necessary/
+body {
+    margin: auto;
+    height: auto;
+
+    /*Todo: center all the contend using appropriate properties */
+    background-color: #f5f5f5;
+}
+
+
+
+
+.button {
+    display: inline-flex;
+    height: 40px;
+    width: 150px;
+    border: 2px solid #BFC0C0;
+    /* margin: 20px 20px 20px 20px; */
+    /* padding: 0 5%; */
+    /* margin: ; */
+    color: #BFC0C0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  a {
+    color: #BFC0C0;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+
+
+
+.card {
+  margin: 0 50px;
+    background: #fff;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    display: flex;
+    width: auto;
+    height: auto;
+    border: #414141 9px solid;
+    flex-direction: row;
+    border-radius: 30px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 25%;
+    left:30%;
+    /* padding: 10%; */
+
+    /*Todo: css required to make the image-avatar div floating */
+}
+.card .title {
+    font-family: 'Arvo', serif;
+    padding: 1rem;
+    text-align: right;
+    color: rgb(39 39 42);
+    font-size: 14px;
+}
+.card .desc {
+    font-family: 'Merienda', cursive;
+    padding: 0.5rem 1rem;
+    font-size: 12px;
+    color: #666666;
+}
+.card .actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+.card svg {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+}
+
+.img-avatar {
+    width: 180px;
+    height: 180px;
+    /*Todo: position this div to overlay the card */
+    position: absolute;
+    border-radius: 50%;
+    border: 6px solid white;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    top: 45px;     /*Todo: can we make it responsive ? */
+    left: 170px;   /*Todo: can we make it responsive ? */
+}
+
+.card-text {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.title-total {
+    padding: 14.5em 1.5em 1.5em 1.5em;
+}
+
+path {
+    fill: white;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    /* position; */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-position: bottom center;
+    background-size: cover;
+    background-color: #000000;
+    /*Todo: apply a background gradient at 315deg from color #000000 0% to #414141 74% (Or play around with more css )*/
+
+    background: rgb(0,0,0);
+    background: linear-gradient(315deg, rgba(0,0,0,1) 0%, rgba(65,65,65,1) 74%);
+}
+
+.name {
+    font-family: 'Arvo', serif;
+    font-size: 4.5em;
+    font-weight: bold;
+    color: rgb(55 65 81);
+    margin: 0;
+}
+
+#button-7 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  #button-7 a {
+    position: relative;
+    /* left: 0; */
+    /* padding: 10% 10%; */
+    /* margin: 10px 10%; */
+    transition: all .35s ease-Out;
+  }
+
+  #dub-arrow {
+    width: 100%;
+    height: 100%;
+    background: #BFC0C0;
+    left: -200px;
+    position: absolute;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .35s ease-Out;
+    bottom: 0;
+  }
+
+  #button-7 img {
+    width: 20px;
+    height: auto;
+  }
+
+  #button-7:hover #dub-arrow {
+    left: 0;
+  }
+
+  #button-7:hover a {
+    left: 150px;
+  }
+
+  @media screen and (min-width:1000px) {
+    h1 {
+      font-size: 2.2em;
+    }
+    #container {
+      width: 50%;
+    }
+  }
+
+
+  #button-6 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  #button-7 a {
+    position: relative;
+    /* left: 0; */
+    /* padding: 10% 10%; */
+    /* margin: 10px 10%; */
+    transition: all .35s ease-Out;
+  }
+
+  #dub-arrow {
+    width: 100%;
+    height: 100%;
+    background: #BFC0C0;
+    left: -200px;
+    position: absolute;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .35s ease-Out;
+    bottom: 0;
+  }
+
+  #button-6 img {
+    width: 20px;
+    height: auto;
+  }
+
+  #button-6:hover #dub-arrow {
+    left: 0;
+  }
+
+  #button-6:hover a {
+    left: 150px;
+  }
+
+  @media screen and (min-width:1000px) {
+    h1 {
+      font-size: 2.2em;
+    }
+    #container {
+      width: 50%;
+    }
+  }
